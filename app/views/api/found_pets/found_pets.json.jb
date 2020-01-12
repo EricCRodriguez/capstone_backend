@@ -1,0 +1,11 @@
+{
+  id: user_id.id,
+  address: found_pets.address,
+  breed: found_pets.breed,
+  color: found_pets.color,
+  size: found_pets.size,
+  gender: found_pets.gender,
+  picture: found_pets.picture,
+  add_info: found_pets.add_info,
+  shelter_info: found_pets.shelter_info,
+}

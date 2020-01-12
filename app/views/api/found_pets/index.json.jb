@@ -1,0 +1,14 @@
+@found_pets.map do |found_pets|
+  {
+    id: found_pets.id,
+    address: found_pets.address,
+    breed: found_pets.breed,
+    color: found_pets.color,
+    size: found_pets.size,
+    gender: found_pets.gender,
+    add_info: found_pets.add_info,
+    shelter_info: found_pets.shelter_info,
+    user_id: found_pets.user_id,
+    is_creator: current_user.id == found_pets.user_id,
+  }
+end

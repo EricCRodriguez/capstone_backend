@@ -1,0 +1,15 @@
+{
+  id: @lost_pet.id,
+  address: @lost_pet.address,
+  search_area: @lost_pet.search_area,
+  breed: @lost_pet.breed,
+  color: @lost_pet.color,
+  size: @lost_pet.size,
+  age: @lost_pet.age,
+  gender: @lost_pet.gender,
+  behaviour_type: @lost_pet.behaviour_type,
+  name: @lost_pet.name,
+  picture: @lost_pet.picture,
+  user_id: @lost_pet.user_id,
+  is_creator: current_user.id == @lost_pet.user_id,
+}

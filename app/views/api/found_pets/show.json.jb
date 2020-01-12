@@ -1,0 +1,12 @@
+{
+  id: @found_pet.id,
+  address: @found_pet.address,
+  breed: @found_pet.breed,
+  color: @found_pet.color,
+  size: @found_pet.size,
+  gender: @found_pet.gender,
+  add_info: @found_pet.add_info,
+  shelter_info: @found_pet.shelter_info,
+  user_id: @found_pet.user_id,
+  is_creator: current_user.id == @found_pet.user_id,
+}

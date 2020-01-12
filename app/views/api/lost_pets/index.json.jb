@@ -1,0 +1,17 @@
+@lost_pets.map do |lost_pets|
+  {
+    id: lost_pets.id,
+    address: lost_pets.address,
+    search_area: lost_pets.search_area,
+    breed: lost_pets.breed,
+    color: lost_pets.color,
+    size: lost_pets.size,
+    age: lost_pets.age,
+    gender: lost_pets.gender,
+    behaviour_type: lost_pets.behaviour_type,
+    name: lost_pets.name,
+    picture: lost_pets.picture,
+    user_id: lost_pets.user_id,
+    is_creator: current_user.id == lost_pets.user_id,
+  }
+end
