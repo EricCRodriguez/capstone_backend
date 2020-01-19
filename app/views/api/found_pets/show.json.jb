@@ -8,5 +8,5 @@
   add_info: @found_pet.add_info,
   shelter_info: @found_pet.shelter_info,
   user_id: @found_pet.user_id,
-  is_creator: current_user.id == @found_pet.user_id,
+  is_creator: current_user && current_user.id == @found_pet.user_id,
 }

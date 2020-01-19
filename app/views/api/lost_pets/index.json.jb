@@ -12,6 +12,6 @@
     name: lost_pets.name,
     picture: lost_pets.picture,
     user_id: lost_pets.user_id,
-    is_creator: current_user.id == lost_pets.user_id,
+    is_creator: current_user && current_user.id == lost_pets.user_id,
   }
 end
