@@ -8,6 +8,7 @@
     gender: found_pets.gender,
     add_info: found_pets.add_info,
     shelter_info: found_pets.shelter_info,
+    picture: found_pets.picture,
     user_id: found_pets.user_id,
     is_creator: current_user && current_user.id == found_pets.user_id,
   }
