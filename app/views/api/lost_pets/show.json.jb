@@ -11,5 +11,6 @@
   name: @lost_pet.name,
   picture: @lost_pet.picture,
   user_id: @lost_pet.user_id,
+  user_name: @lost_pet.user.first_name,
   is_creator: current_user && current_user.id == @lost_pet.user_id,
 }

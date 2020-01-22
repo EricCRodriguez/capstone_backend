@@ -1,0 +1,9 @@
+
+@messages.map do |message|
+  {
+    sender_id: message.sender_id,
+    body: message.body,
+    picture: message.picture,
+    receiver_id: message.receiver_id,
+  }
+end

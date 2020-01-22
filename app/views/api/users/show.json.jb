@@ -3,6 +3,22 @@
   first_name: @user.first_name,
   last_name: @user.last_name,
   email: @user.email,
-  sent_messages: @user.sent_messages,
-  received_messages: @user.received_messages,
+  sent_messages: @user.sent_messages.map do |message|
+    {
+      id: message.id,
+      receiver_name: message.receiver.first_name,
+      body: message.body,
+      picture: message.picture,
+      created_at: message.created_at,
+    }
+  end,
+  received_messages: @user.received_messages.map do |message|
+    {
+      id: message.id,
+      sender_name: message.sender.first_name,
+      body: message.body,
+      picture: message.picture,
+      created_at: message.created_at,
+    }
+  end,
 }
